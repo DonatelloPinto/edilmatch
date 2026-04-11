@@ -1,0 +1,30 @@
+export const designSystem = {
+  colors: {
+    navy: "#0f2444",
+    navyMid: "#1a3a6b",
+    orange: "#f97316",
+    orangeLight: "#fff4ed",
+    white: "#ffffff",
+    bg: "#f8f9fc",
+    surface: "#ffffff",
+    border: "#e2e8f0",
+    muted: "#64748b",
+    text: "#0f172a",
+    success: "#16a34a",
+    warning: "#d97706",
+    error: "#dc2626",
+    info: "#0ea5e9",
+  },
+  typography: {
+    heading: "Sora",
+    body: "DM Sans",
+    mono: "JetBrains Mono",
+  },
+  layout: {
+    maxWidth: "1280px",
+    radiusCard: "16px",
+    radiusButton: "10px",
+    shadowCard: "0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.08)",
+    shadowCardHover: "0 8px 32px rgba(0,0,0,0.12)",
+  },
+} as const;
