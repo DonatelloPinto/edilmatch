@@ -4,8 +4,8 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
-import { detectLocationWithGoogle } from "@/lib/geolocation-client";
 import { CATEGORIES } from "@/lib/config/constants";
+import { detectLocationWithGoogle } from "@/lib/geolocation-client";
 
 export function HeroSearchBar() {
   const router = useRouter();
@@ -64,13 +64,17 @@ export function HeroSearchBar() {
           className="text-white/90 transition-all duration-200 hover:text-white"
           title="Rileva posizione"
         >
-          {loading ? "…" : "📍"}
+          {loading ? "..." : "📍"}
         </button>
       </div>
-      <Button type="button" className="bg-[var(--color-orange)] text-white hover:bg-orange-500 transition-all duration-200" onClick={handleSearch}>
+      <Button
+        type="button"
+        className="bg-[var(--color-orange)] text-white transition-all duration-200 hover:bg-orange-500"
+        onClick={handleSearch}
+      >
         Cerca
       </Button>
-      {message ? <p className="sm:col-span-4 text-left text-xs text-white/90">{message}</p> : null}
+      {message ? <p className="text-left text-xs text-white/90 sm:col-span-4">{message}</p> : null}
     </div>
   );
 }

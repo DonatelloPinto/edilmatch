@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { HeroSearchBar } from "@/app/(public)/HeroSearchBar";
+import { HeroSearchBar } from "@/components/home/HeroSearchBar";
 import { ScrollReveal } from "@/components/home/ScrollReveal";
 import { HomeFAQ } from "@/components/home/HomeFAQ";
 import { HomeHowItWorks } from "@/components/home/HomeHowItWorks";
